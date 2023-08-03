@@ -1,8 +1,5 @@
 const { Router } = require('express');
 const controller = require('../controller/controller.js');
-console.log(controller);
-// const getApps = require('../controller/getAppsControllers');
-// const getTypes = require('../controller/getTypesController');
 
 const router = Router();
 

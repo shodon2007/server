@@ -22,12 +22,14 @@ class Controller {
         const url = getUrl(req.originalUrl);
         const query = `SELECT * FROM \`app-list\` WHERE type = '${url}'`;
         const data = await queryDatabase(query);
-        res.send(data);
+        res.send("hello worlds getApps");
+        // res.send(data);
     }
     async getTypes(req, res) {
         const query = 'SELECT DISTINCT type FROM `app-list`';
         const data = await queryDatabase(query);
-        res.send(data);
+        res.send("hello world types");
+        // res.send(data);
     }
 }
 
